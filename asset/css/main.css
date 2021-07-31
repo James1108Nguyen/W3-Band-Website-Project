@@ -43,12 +43,15 @@ li {
 }
 
 .mgt8 {
-    margin-top: 8px;
+    margin-top: 8px !important;
 }
 
-.mgrl0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+.mgt16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 .row {
@@ -56,6 +59,7 @@ li {
     margin-right: -8px;
 }
 
+.content-section::after,
 .row::after {
     content: "";
     display: block;
@@ -219,7 +223,6 @@ li {
     margin: 0 auto;
     padding: 64px 16px;
     overflow: hidden;
-
 }
 
 #content .content-heading{
@@ -241,7 +244,7 @@ li {
 }
 
 #content .member-list {
-    padding: 0 8px;
+    padding: 32px 8px;
 }
 
 #content .member-name{
@@ -327,7 +330,7 @@ li {
     font-size:15px;
 }
 
-#tour-section .ticket-btn{
+.btn {
     font-size: 15px;
     margin: 15px 0px;
     display: inline-block;
@@ -335,7 +338,20 @@ li {
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
+    border: none;
+    font-family:  "Lato", sans-serif;
+    line-height: 1.5;
 }
+
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+
 
 /* Tour modal (Buy ticket)*/
 .open-tour-modal {
@@ -403,6 +419,8 @@ li {
     padding: 8px;
     cursor: pointer;
 }
+
+
 #tour-modal .pay-ticket-button {
     font-size: 16px;
     width: 100%;
@@ -413,6 +431,7 @@ li {
     color: #fff;
     cursor: pointer;
 }
+
 #tour-modal .pay-ticket-button:hover {
     background: #009687a5;
 }
@@ -452,14 +471,7 @@ li {
 }
 .send-contact {
     float: right;
-    font-size: 15px;
-    background-color: #000;
-    color: #fff;
-    padding: 8px 16px;
     margin: 16px 0;
-    border: none;
-    font-family:  "Lato", sans-serif;
-    line-height: 1.5;
 }
 
 .send-contact:hover {
@@ -467,9 +479,37 @@ li {
     background-color: #ccc;
 }
 
+#map {
+    width: 100%;    
+    filter: grayscale(50%);
+}
+
 
 #footer{
+    padding: 64px 16px;
+    color: #000;
+    opacity: 0.6;
+    text-align: center;
+    background: #f1f1f1;
+}
 
+#footer a {
+    color: #000;
+
+}
+
+.social-list{
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-list a:hover {
+    opacity: 0.4;
+}
+
+.copyright {
+    margin: 15px 0;
+    font-size: 15px;
 }
 
 
