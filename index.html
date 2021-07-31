@@ -53,18 +53,21 @@
                     <p class="content-subheading">We love music</p>
                     <p class="band-detal">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <!-- Member -->
-                    <div class="member">
-                        <p class="member-name">Name</p>
-                        <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
+                    <div class="row member-list">
+                        <div class="col col-third">
+                            <p class="member-name">Name</p>
+                            <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
+                        </div>
+                        <div class="col col-third">
+                            <p class="member-name">Name</p>
+                            <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
+                        </div>
+                        <div class="col col-third">
+                            <p class="member-name">Name</p>
+                            <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
+                        </div>          
+                        <div class="clear"></div>          
                     </div>
-                    <div class="member">
-                        <p class="member-name">Name</p>
-                        <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
-                    </div>
-                    <div class="member">
-                        <p class="member-name">Name</p>
-                        <img src="./asset/img/Member/bandmember.jpeg" alt="Name" class="member-photo">
-                    </div>                    
                 </div>
 
                 <div id="tour-section">
@@ -77,8 +80,8 @@
                             <li>November <span class="ticket-amount">3</span></li>
                         </ul>                
 
-                        <div class="ticket-list">
-                            <div class="ticket-item">
+                        <div class="row ticket-list">
+                            <div class="col col-third ticket-item">
                                 <img src="./asset/img/ticket-place/newyork.jpeg" alt="ticket-place-img" class="ticket-place-img">
                                 <div class="ticket-info">
                                     <h3 class="ticket-place">New York</h3>
@@ -87,7 +90,7 @@
                                     <a class="ticket-btn js-btn-buy">Buy Tickets</a>
                                 </div>
                             </div>
-                            <div class="ticket-item">
+                            <div class="col col-third ticket-item">
                                 <img src="./asset/img/ticket-place/paris.jpeg" alt="ticket-place-img" class="ticket-place-img">
                                 <div class="ticket-info">
                                     <h3 class="ticket-place">Paris</h3>
@@ -96,7 +99,7 @@
                                     <a class="ticket-btn js-btn-buy">Buy Tickets</a>
                                 </div>
                             </div>
-                            <div class="ticket-item">
+                            <div class="col col-third ticket-item">
                                 <img src="./asset/img/ticket-place/sanfran.jpeg" alt="ticket-place-img" class="ticket-place-img">
                                 <div class="ticket-info">
                                     <h3 class="ticket-place">San Francisco</h3>
@@ -110,7 +113,47 @@
             
                     </div>
                 </div>
+                
+                <!-- Contact section -->
+                <div class="content-section">
+                    <h2 class="content-heading">contact</h2>
+                    <p class="content-subheading">Fan? Drop a note!</p>
+                    
+                    <div class="row contact-content mgrl0">
+                        <div class="col col-half contact-info">
+                            <p><i class="fa fa-map-marker"></i>Chicago, US</p>
+                            <p><i class="fa fa-phone"></i>Phone: +00 151515</p>
+                            <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
+                        </div>
 
+                        <div class="col col-half">
+                            <form action="">
+                                <div class="row mgrl0">
+                                    <div class="col col-half">
+                                        <input type="name" placeholder="Name" required class="form-control">
+                                    </div>
+                                    <div class="col col-half">
+                                        <input type="email" placeholder="Email" required class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mgt8 mgrl0" >
+                                    <div class="col col-full">
+                                        <input type="message" placeholder="Message" required class="form-control">
+                                    </div> 
+                                </div> 
+                                <input type="submit" class="send-contact" value="SEND">
+                            </form>
+                                
+      
+                        </div>
+                    </div>
+
+
+                    <div class="clear"></div>          
+                </div>
+                <!-- End contact section -->
+            </div> 
+                
                     
             </div>
             <!-- Tour modal -->

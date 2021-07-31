@@ -29,15 +29,11 @@ li {
 2. Kích thước
 3. Màu sắc
 4. Dạng/ Loại ( hình tròn vuông .... )
-
-
 */
 
 
 
-#main {
-}
-
+/* General classes */
 .text-white {
     color: #fff;
 }
@@ -45,6 +41,53 @@ li {
 .clear {
     clear: both;
 }
+
+.mgt8 {
+    margin-top: 8px;
+}
+
+.mgrl0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.col {
+    float: left !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.3333%;
+}
+
+
+
+
+
+#main {
+}
+
 
 #header{
     /* Khi cho position: fixed  
@@ -161,14 +204,13 @@ li {
     font-size: 24px;
     line-height: 36px;
 }
+
+
 #slider .slider-scr{
     font-size: 15px;
     margin-top: 15px;
 }
 
-#content {
-
-}
 
 
 #content .content-section{
@@ -198,11 +240,10 @@ li {
     margin-bottom: 15px;
 }
 
-#content .member{
-    margin: 32px auto;
-    width: 33.3333%;    
-    float: left;
+#content .member-list {
+    padding: 0 8px;
 }
+
 #content .member-name{
     margin: 15px auto;    
     font-size: 15px;
@@ -250,25 +291,24 @@ li {
 }
 
 #tour-section .ticket-list{
-    margin: 32px -8px;    
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 
 #tour-section .ticket-item{
-    font-size: 0px;
-    background: #000;
-    text-align: initial;
-    width: 33.333%;
-    float: left;
     padding: 0px 8px;
     margin-bottom: 16px;
 }
+
+
 #tour-section .ticket-place-img{
     width: 100%;
         
 }
 #tour-section .ticket-info{
     font-size:15px;
+    text-align: initial;
     background-color: #fff;
     padding: 0 16px;
     display: inline-block;
@@ -373,6 +413,13 @@ li {
     color: #fff;
     cursor: pointer;
 }
+#tour-modal .pay-ticket-button:hover {
+    background: #009687a5;
+}
+#tour-modal .buy-ticket-close-icon:hover {
+    font-size: 17px !important;
+    color: rgb(255, 255, 204);
+}
 
 #tour-modal .need-help {
     font-size: 15px;
@@ -380,6 +427,46 @@ li {
     float: right;
     padding: 15px 0px !important;
 }
+
+.contact-content {
+    padding: 32px 0px;
+}
+
+.contact-info {
+    font-size: 18px;
+    text-align: initial;   
+}
+.contact-info p i {
+    width: 30px;
+}
+
+
+.form-control {
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-family:  "Lato", sans-serif;
+    line-height: 1.5;
+    
+}
+.send-contact {
+    float: right;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: none;
+    font-family:  "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.send-contact:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
 
 #footer{
 
